@@ -980,6 +980,9 @@ def main():
     parser.add_argument("--model-type", choices=["random_forest", "gradient_boosting"],
                         default="random_forest", help="ML model type for DGA")
     parser.add_argument("--dga-model", help="Path to saved DGA model (pickle)")
+    parser.add_argument("--trust-dga-model", action="store_true",
+                        help="Required to load --dga-model. Pickle files execute code on load; "
+                             "only pass models you trained yourself.")
 
     # Output
     parser.add_argument("--output", default="dns_c2_report.json",
@@ -1063,6 +1066,10 @@ def main():
         model = None
         scaler = None
 
+        if args.dga_model and not args.trust_dga_model:
+            print("[!] Refusing to load --dga-model without --trust-dga-model "
+                  "(pickle files can execute arbitrary code on load).")
+            sys.exit(2)
         if args.dga_model and os.path.exists(args.dga_model):
             print(f"[*] Loading DGA model from {args.dga_model}...")
             with open(args.dga_model, "rb") as f:

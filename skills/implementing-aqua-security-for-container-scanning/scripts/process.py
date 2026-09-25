@@ -9,6 +9,7 @@ vulnerability reports across multiple container images.
 import json
 import os
 import sys
+import tempfile
 import subprocess
 from datetime import datetime
 from collections import defaultdict
@@ -74,9 +75,10 @@ def generate_fleet_report(images: list) -> dict:
         "image_reports": [],
     }
 
+    scan_dir = tempfile.mkdtemp(prefix="trivy_scan_")
     for i, image in enumerate(images):
         print(f"Scanning {i+1}/{len(images)}: {image}")
-        output_file = f"/tmp/trivy_scan_{i}.json"
+        output_file = os.path.join(scan_dir, f"trivy_scan_{i}.json")
         scan_data = run_trivy_scan(image, output_file)
         if not scan_data:
             continue
