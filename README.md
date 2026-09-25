@@ -406,7 +406,7 @@ This library is built by the community. Thank you to everyone who has contribute
 
 <!-- contributors:start -->
 <p align="center">
-<a href="https://github.com/mukul975" title="mukul975 — maintainer"><img src="https://github.com/mukul975.png?size=100" width="72" height="72" alt="@mukul975"></a>
+<a href="https://github.com/mukul975" title="mukul975 — 189 contributions"><img src="https://github.com/mukul975.png?size=100" width="72" height="72" alt="@mukul975"></a>
 <a href="https://github.com/valorisa" title="valorisa — 18 contributions"><img src="https://github.com/valorisa.png?size=100" width="72" height="72" alt="@valorisa"></a>
 <a href="https://github.com/juliosuas" title="juliosuas — 13 contributions"><img src="https://github.com/juliosuas.png?size=100" width="72" height="72" alt="@juliosuas"></a>
 <a href="https://github.com/Daytona39264" title="Daytona39264 — 3 contributions"><img src="https://github.com/Daytona39264.png?size=100" width="72" height="72" alt="@Daytona39264"></a>
@@ -420,9 +420,10 @@ This library is built by the community. Thank you to everyone who has contribute
 <a href="https://github.com/farhan6667" title="farhan6667 — 1 contribution"><img src="https://github.com/farhan6667.png?size=100" width="72" height="72" alt="@farhan6667"></a>
 <a href="https://github.com/dakshverma23" title="dakshverma23 — 1 contribution"><img src="https://github.com/dakshverma23.png?size=100" width="72" height="72" alt="@dakshverma23"></a>
 <a href="https://github.com/nyxst4ck" title="nyxst4ck — 1 contribution"><img src="https://github.com/nyxst4ck.png?size=100" width="72" height="72" alt="@nyxst4ck"></a>
+<a href="https://github.com/triggs2025" title="triggs2025 — maintainer"><img src="https://github.com/triggs2025.png?size=100" width="72" height="72" alt="@triggs2025"></a>
 </p>
 
-<p align="center"><sub>14 contributors, ordered by contribution count · see the full <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/graphs/contributors">contributor graph</a></sub></p>
+<p align="center"><sub>15 contributors, ordered by contribution count · see the full <a href="https://github.com/triggs2025/Anthropic-Cybersecurity-Skills/graphs/contributors">contributor graph</a></sub></p>
 <!-- contributors:end -->
 
 ## Community
