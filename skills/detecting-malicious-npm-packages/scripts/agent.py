@@ -83,7 +83,8 @@ def inspect_tarball(tgz: Path, workdir: Path) -> dict:
     try:
         with tarfile.open(tgz, "r:gz") as tf:
             members = [m for m in tf.getmembers() if not m.name.startswith(("/", ".."))]
-            tf.extractall(extract, members=members)  # noqa: S202 - path-checked members
+            # filter="data" rejects absolute paths, "..", links escaping the target, and device files
+            tf.extractall(extract, members=members, filter="data")
     except (tarfile.TarError, OSError) as exc:
         findings["error"] = f"extract failed: {exc}"
         return findings

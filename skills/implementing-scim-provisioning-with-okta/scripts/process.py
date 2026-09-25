@@ -467,4 +467,6 @@ def resource_types():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    # Demo server: bind to localhost with the debugger off. The Werkzeug debugger
+    # allows remote code execution if exposed to a network.
+    app.run(host="127.0.0.1", port=8080, debug=False)

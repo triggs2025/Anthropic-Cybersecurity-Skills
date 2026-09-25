@@ -31,7 +31,7 @@ POISON_PATTERNS = [
     r"before (using|calling) (this|any) tool,? (you must|always)",
     r"call (the )?\w+ tool (first|before)",
 ]
-SMUGGLE = re.compile(r"[​-‏‪-‮⁠-⁯\U000e0000-\U000e007f]")
+SMUGGLE = re.compile(r"[\u200b-\u200f\u202a-\u202e\u2060-\u206f\U000e0000-\U000e007f]")
 
 
 def heuristic_flags(description: str):
